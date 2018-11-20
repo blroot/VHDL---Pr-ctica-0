@@ -19,3 +19,9 @@ begin
     end if;
   end process;
 end explicit_proc_sec;
+
+-- arquitectura basada en sentencias concurrentes
+architecture concurrent_sentences of dmux2_1 is
+begin
+  s <= '0' & a when sel='0' else a & '0';
+end concurrent_sentences;
